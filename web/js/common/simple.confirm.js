@@ -1,0 +1,1 @@
+(function(a){function b(c,d){if(confirm(c)){window.location.href=a(d).attr("href")}return false}a("a.simple-confirm").live("mouseover",function(){if(a(this).attr("title")){this.message=a(this).attr("title");a(this).removeAttr("title")}}).live("click",function(d){var c=this;d.preventDefault();d.stopPropagation();b(c.message,this)})})(jQuery);

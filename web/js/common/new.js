@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){function a(){jQuery("[new]").each(function(){var b=jQuery(this).attr("new");var c=jQuery(this);$.get(base_url+"new.php",{action:b},function(d){if(!d.error&&d.count>0){c.html("("+d.count+")")}else{c.remove()}setTimeout(function(){a()},10000)},"json")})}a()});

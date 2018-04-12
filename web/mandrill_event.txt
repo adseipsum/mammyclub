@@ -1,0 +1,25 @@
+{
+ "event": "soft_bounce",
+ "_id": "31d63a1bacaf4cbcbdbca51fc811300a",
+ "msg": {
+         "ts": 1446817575,
+         "_id": "31d63a1bacaf4cbcbdbca51fc811300a",
+         "state": "soft-bounced",
+         "subject": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 MammyClub",
+         "email": "bukatest@xxxtest.ua",
+         "tags": ["Single letter of pregnancy week broadcast"],
+         "smtp_events":[],
+         "resends":[],
+         "_version":"jt5jAdnhRNQ6sATodwkYWA",
+         "diag":"",
+         "bgtools_code":21,
+         "metadata":{
+                     "website":"mammyclub.com",
+                     "broadcast_id":"19108",
+                     "recipient_id":"103363"},
+         "sender":"no-reply@mammyclub.com",
+         "template":null,
+         "bounce_description":"invalid_domain"
+        },
+ "ts":1446817758
+}

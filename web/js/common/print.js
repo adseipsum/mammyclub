@@ -1,0 +1,1 @@
+jQuery.fn.print=function(a){var b=a?a:[];$(this).each(function(){$(this).click(function(){var d=800;var c=500;if(b.width){d=b.width}if(b.height){c=b.height}window.open($(this).attr("href"),"Print","menubar=0,resizable=1,width="+d+",height="+c+",scrollbars=1");return false})});return this};

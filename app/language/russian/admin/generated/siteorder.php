@@ -1,0 +1,192 @@
+<?php if (!defined("BASEPATH")) exit("No direct script access allowed");
+
+//------------------------ SITEORDER > START -----------------------------------;
+$lang['admin.menu.siteorder.name'] = 'Заказы';
+$lang['admin.entity_list.siteorder.list_title'] = 'Заказы';
+$lang['admin.entity_list.siteorder.filter.paid_title'] = 'Оплачено';
+$lang['admin.entity_list.siteorder.filter.siteorder_status.id_title'] = 'Статус';
+$lang['admin.entity_list.siteorder.filter.products.id_title'] = 'Товар';
+$lang['admin.entity_list.siteorder.filter.user.id_title'] = 'Пользователь';
+$lang['admin.entity_list.siteorder.filter.created_at_title'] = 'Дата оформления';
+$lang['admin.entity_list.siteorder.filter.made_via_phone_title'] = 'Оформлен по телефону';
+$lang['admin.entity_list.siteorder.filter.manager.id_title'] = 'Менеджер';
+$lang['admin.entity_list.siteorder.filter.shipment_store.id_title'] = 'Склад отгрузки';
+$lang['admin.entity_list.siteorder.filter.shipment_date_title'] = 'Дата отгрузки';
+$lang['admin.entity_list.siteorder.filter.paid_date_title'] = 'Дата оплаты';
+
+$lang['admin.send_ty_email'] = 'Спасибо за покупку';
+$lang['admin.preview'] = 'Просмотр';
+$lang['admin.siteorder_report'] = 'Отчет по продажам';
+$lang['admin.siteorder_report_process'] = 'Отчет по продажам';
+$lang['admin.assemble'] = 'Комплектация заказов';
+$lang['admin.siteorder_restore_process'] = 'Восстановить заказ';
+
+$lang['admin.export.siteorder.form_title'] = 'Экспорт заказов';
+
+$lang['admin.generate_order_shipmet_doc_on_confirmed_stock'] = 'Заявка Zammler';
+$lang['admin.generate_order_shipmet_doc'] = 'Заявка Поставщик';
+$lang['admin.create_ttn'] = 'Создать ТТН';
+$lang['admin.siteorder_products_reserve'] = 'Зарезервировать товары';
+
+$lang['admin.search.siteorder.description'] = 'По ФИО, email, телефону, каналу привлечения и коду заказа';
+
+$lang['admin.entity_list.siteorder.code'] = 'Код заказа';
+$lang['admin.entity_list.siteorder.fio'] = 'ФИО';
+$lang['admin.entity_list.siteorder.phone'] = 'Телефон';
+$lang['admin.entity_list.siteorder.email'] = 'Email';
+$lang['admin.entity_list.siteorder.delivery_type'] = 'Способ доставки';
+$lang['admin.entity_list.siteorder.delivery_carrier'] = 'Перевозчик';
+$lang['admin.entity_list.siteorder.manager.name'] = 'Менеджер';
+$lang['admin.entity_list.siteorder.shipment_store.name'] = 'Склад отгрузки';
+$lang['admin.entity_list.siteorder.shipment_date'] = 'Дата отгрузки';
+$lang['admin.entity_list.siteorder.delivery_adress'] = 'Адрес доставки';
+$lang['admin.entity_list.siteorder.payment_type'] = 'Способ оплаты';
+$lang['admin.entity_list.siteorder.Cart.total'] = 'Сумма';
+$lang['admin.entity_list.siteorder.total_with_discount'] = 'Сумма';
+$lang['admin.entity_list.siteorder.created_at'] = 'Дата оформления';
+$lang['admin.entity_list.siteorder.paid'] = 'Оплатил';
+$lang['admin.entity_list.siteorder.request_review'] = 'Запрос отзыва';
+$lang['admin.entity_list.siteorder.involvement_chanel'] = 'Канал привлечения';
+$lang['admin.entity_list.siteorder.made_via_phone'] = 'Оформлен по телефону';
+$lang['admin.entity_list.siteorder.ttn_code'] = 'Номер ТТН';
+$lang['admin.entity_list.siteorder.inv_channel'] = 'Канал привлечения';
+$lang['admin.entity_list.siteorder.is_repeat_order'] = 'Повторный заказ';
+$lang['admin.entity_list.siteorder.paid_date'] = 'Дата оплаты';
+$lang['admin.entity_list.siteorder.np_sender.name'] = 'Аккаунт НП';
+$lang['admin.entity_list.siteorder.filter.np_sender.id_title'] = 'Аккаунт НП';
+
+$lang['admin.add_edit.siteorder.form_title'] = ' Добавить/изменить Siteorder';
+$lang['admin.add.siteorder.form_title'] = 'Добавить Siteorder';
+$lang['admin.add_edit.siteorder.id'] = 'id';
+$lang['admin.add_edit.siteorder.code'] = 'Номер заказа';
+$lang['admin.add_edit.siteorder.code.description'] = '';
+$lang['admin.add_edit.siteorder.ttn_code'] = 'Номер ТТН';
+$lang['admin.add_edit.siteorder.ttn_code.description'] = '';
+$lang['admin.add_edit.siteorder.user'] = 'Пользователь';
+$lang['admin.add_edit.siteorder.user.description'] = '';
+$lang['admin.add_edit.siteorder.user.default'] = '--Пожалуйста выберите--';
+$lang['admin.add_edit.siteorder.fio'] = 'ФИО';
+$lang['admin.add_edit.siteorder.fio.description'] = '';
+$lang['admin.add_edit.siteorder.first_name'] = 'Имя';
+$lang['admin.add_edit.siteorder.first_name.description'] = '';
+$lang['admin.add_edit.siteorder.last_name'] = 'Фамилия';
+$lang['admin.add_edit.siteorder.last_name.description'] = '';
+$lang['admin.add_edit.siteorder.phone'] = 'Телефон';
+$lang['admin.add_edit.siteorder.phone.description'] = '';
+$lang['admin.add_edit.siteorder.email'] = 'Email';
+$lang['admin.add_edit.siteorder.email.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_type'] = 'Тип доставки';
+$lang['admin.add_edit.siteorder.delivery_type.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_carrier'] = 'Перевозчик';
+$lang['admin.add_edit.siteorder.delivery_carrier.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_adress'] = 'Адрес доставки';
+$lang['admin.add_edit.siteorder.delivery_adress.description'] = '';
+$lang['admin.add_edit.siteorder.payment_type'] = 'Способ оплаты';
+$lang['admin.add_edit.siteorder.payment_type.description'] = '';
+$lang['admin.add_edit.siteorder.order_type'] = 'Способ оформления';
+$lang['admin.add_edit.siteorder.order_type.description'] = '';
+$lang['admin.add_edit.siteorder.manager'] = 'Менеджер';
+$lang['admin.add_edit.siteorder.manager.default'] = '-- Выберите менеджера --';
+$lang['admin.add_edit.siteorder.manager.description'] = '';
+$lang['admin.add_edit.siteorder.shipment_store'] = 'Склад отгрузки';
+$lang['admin.add_edit.siteorder.shipment_store.default'] = '-- Выберите склад отгрузки --';
+$lang['admin.add_edit.siteorder.shipment_store.description'] = '';
+$lang['admin.add_edit.siteorder.shipment_date'] = 'Дата отгрузки';
+$lang['admin.add_edit.siteorder.shipment_date.description'] = '';
+$lang['admin.add_edit.siteorder.order_weight'] = 'Вес';
+$lang['admin.add_edit.siteorder.order_weight.description'] = '';
+$lang['admin.add_edit.siteorder.order_length'] = 'Длина';
+$lang['admin.add_edit.siteorder.order_length.description'] = '';
+$lang['admin.add_edit.siteorder.order_width'] = 'Ширина';
+$lang['admin.add_edit.siteorder.order_width.description'] = '';
+$lang['admin.add_edit.siteorder.order_height'] = 'Высота';
+$lang['admin.add_edit.siteorder.order_height.description'] = '';
+$lang['admin.add_edit.siteorder.total'] = 'Сумма';
+$lang['admin.add_edit.siteorder.total.description'] = '';
+$lang['admin.add_edit.siteorder.paid'] = 'Оплатил';
+$lang['admin.add_edit.siteorder.paid.description'] = '';
+$lang['admin.add_edit.siteorder.paid_date'] = 'Дата оплаты';
+$lang['admin.add_edit.siteorder.paid_date.description'] = '';
+$lang['admin.add_edit.siteorder.is_repeat_order'] = 'Повторный заказ';
+$lang['admin.add_edit.siteorder.is_repeat_order.description'] = '';
+$lang['admin.add_edit.siteorder.request_review'] = 'Запрос отзыва';
+$lang['admin.add_edit.siteorder.request_review.description'] = '';
+$lang['admin.add_edit.siteorder.siteorder_status'] = 'Статус';
+$lang['admin.add_edit.siteorder.siteorder_status.default'] = '--Не выбрано--';
+$lang['admin.add_edit.siteorder.siteorder_status.description'] = '';
+$lang['admin.add_edit.siteorder.created_at'] = 'Дата оформления';
+$lang['admin.add_edit.siteorder.created_at.description'] = '';
+$lang['admin.add_edit.siteorder.products.to'] = 'Товары в заказе';
+$lang['admin.add_edit.siteorder.products.from'] = 'Все товары';
+$lang['admin.add_edit.siteorder.products'] = 'Товары';
+$lang['admin.add_edit.siteorder.products.description'] = '';
+$lang['admin.add_edit.siteorder.involvement_chanel'] = 'Канал привлечения';
+$lang['admin.add_edit.siteorder.involvement_chanel.description'] = '';
+$lang['admin.add_edit.siteorder.made_via_phone'] = 'Оформлен по телефону';
+$lang['admin.add_edit.siteorder.made_via_phone.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel'] = 'Канал привлечения покупки';
+$lang['admin.add_edit.siteorder.inv_channel.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel_src'] = 'current.src покупки';
+$lang['admin.add_edit.siteorder.inv_channel_src.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel_mdm'] = 'current.mdm покупки';
+$lang['admin.add_edit.siteorder.inv_channel_mdm.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel_cmp'] = 'current.cmp покупки';
+$lang['admin.add_edit.siteorder.inv_channel_cmp.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel_cnt'] = 'current.cnt покупки';
+$lang['admin.add_edit.siteorder.inv_channel_cnt.description'] = '';
+$lang['admin.add_edit.siteorder.inv_channel_trm'] = 'current.trm покупки';
+$lang['admin.add_edit.siteorder.inv_channel_trm.description'] = '';
+$lang['admin.add_edit.siteorder.complete_status_date'] = 'Дата выполнения заказа';
+$lang['admin.add_edit.siteorder.upsale'] = 'UPSALE';
+$lang['admin.add_edit.siteorder.upsale.description'] = '';
+$lang['admin.add_edit.siteorder.np_sender'] = 'Отправитель НП';
+$lang['admin.add_edit.siteorder.np_sender.default'] = 'Не выбран';
+$lang['admin.add_edit.siteorder.np_sender.description'] = '';
+
+
+
+$lang['admin.add_edit.siteorder.user_inv_data'] = 'Разложенный канал привлечения пользователя в подписку';
+$lang['admin.add_edit.siteorder.user_inv_data.description'] = '';
+$lang['admin.add_edit.siteorder.user_inv_channel'] = 'Канал привлечения подписки';
+$lang['admin.add_edit.siteorder.user_inv_channel_src'] = 'current.src подписки';
+$lang['admin.add_edit.siteorder.user_inv_channel_mdm'] = 'current.mdm подписки';
+$lang['admin.add_edit.siteorder.user_inv_channel_cmp'] = 'current.cmp подписки';
+$lang['admin.add_edit.siteorder.user_inv_channel_cnt'] = 'current.cnt подписки';
+$lang['admin.add_edit.siteorder.user_inv_channel_trm'] = 'current.trm подписки';
+
+$lang['admin.add_edit.siteorder.delivery_city'] = 'Город';
+$lang['admin.add_edit.siteorder.delivery_city.default'] = '-- Выберите пожалуйста ---';
+$lang['admin.add_edit.siteorder.delivery_city.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_warehouse'] = 'Отделение';
+$lang['admin.add_edit.siteorder.delivery_warehouse.default'] = '-- Выберите пожалуйста ---';
+$lang['admin.add_edit.siteorder.delivery_warehouse.description'] = '';
+
+$lang['admin.add_edit.siteorder.delivery_date'] = 'Ориетировочная дата доставки';
+$lang['admin.add_edit.siteorder.delivery_date.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_interval'] = 'Ориетировочное время доставки';
+$lang['admin.add_edit.siteorder.delivery_interval.description'] = '';
+
+$lang['admin.add_edit.siteorder.delivery_street'] = 'Улица';
+$lang['admin.add_edit.siteorder.delivery_street.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_house'] = 'Номер дома';
+$lang['admin.add_edit.siteorder.delivery_house.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_flat'] = 'Номер квартиры';
+$lang['admin.add_edit.siteorder.delivery_flat.description'] = '';
+$lang['admin.add_edit.siteorder.delivery_post'] = 'Номер склада';
+$lang['admin.add_edit.siteorder.delivery_post.description'] = '';
+
+$lang['admin.add_edit.siteorder.comment'] = 'Комментарий к заказу';
+$lang['admin.add_edit.siteorder.comment.description'] = '';
+$lang['admin.add_edit.siteorder.comment_manager'] = 'Комментарий менеджера';
+$lang['admin.add_edit.siteorder.comment_manager.description'] = '';
+
+$lang['admin.add_edit.siteorder.cart_items_data'] = 'Корзина';
+$lang['admin.add_edit.siteorder.cart_items_data.description'] = '';
+
+$lang['admin.entity_list.siteorder.siteorder_status.name'] = 'Статус';
+
+$lang['admin.messages.siteorder.add'] = 'Siteorder успешно добавлена.';
+$lang['admin.messages.siteorder.edit'] = 'Siteorder успешно изменен.';
+$lang['admin.messages.siteorder.delete'] = 'Siteorder успешно удалён.';
+
+//------------------------ SITEORDER > END -------------------------------------;

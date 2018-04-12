@@ -1,0 +1,32 @@
+# do not show directory index of web/ app/ etc
+Options -Indexes
+DirectoryIndex index.php
+
+<FilesMatch "\.(ttf|ttc|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+     RewriteEngine on
+
+     # /favicon.ico -> /web/images/favicon.ico
+     RewriteRule ^favicon.ico$ ./web/images/favicon.ico [L]
+     
+     # Send js and css in /web/ thru combine.php (provides caching, compression, etc) 
+     RewriteRule ^web/js/(.*\.js) ./combine.php?type=js&files=$1 [L]
+     # For css in js folder:
+     RewriteRule ^web/(js/.*\.css) ./combine.php?type=css&files=$1&css-in-js=true [L] 
+     RewriteRule ^web/css/(.*\.css) ./combine.php?type=css&files=$1 [L]
+
+     # Checking if the requested resource should be an image in our project structure, but DOESN'T EXIST
+     RewriteCond $1 ^web/.*
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule ^(.*)$ web/resource_not_found.php?url=$1 [L]
+
+     # Checking if the requested resource is not an EXISTING file or a directory
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+     
+</IfModule>

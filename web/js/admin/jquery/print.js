@@ -1,0 +1,1 @@
+jQuery.fn.print=function(){$(this).click(function(){window.open($(this).attr("href"),"Print","menubar=0,resizable=1,width=720,height=500,scrollbars=1");return false});return this};

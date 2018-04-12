@@ -1,0 +1,61 @@
+<?php if (!defined("BASEPATH")) exit("No direct script access allowed");
+
+//------------------------ ARTICLE > START -----------------------------------;
+$lang['admin.menu.articles_group.name'] = 'Статьи';
+
+$lang['admin.menu.article.name'] = 'Статьи';
+$lang['admin.entity_list.article.list_title'] = 'Статьи';
+$lang['admin.search.article.description'] = 'по названию';
+$lang['admin.entity_list.article.filter.published_title'] = 'Опубликовано';
+$lang['admin.entity_list.article.filter.category.id_title'] = 'Категория';
+$lang['admin.entity_list.article.filter.author.id_title'] = 'Автор';
+$lang['admin.entity_list.article.filter.date_title'] = 'Дата создания';
+
+$lang['admin.entity_list.article.name'] = 'Название';
+$lang['admin.entity_list.article.category.name'] = 'Категория';
+$lang['admin.entity_list.article.author.name'] = 'Автор';
+$lang['admin.entity_list.article.comment_count'] = 'Кол-во комментариев';
+$lang['admin.entity_list.article.view_count'] = 'Кол-во просмотров';
+$lang['admin.entity_list.article.published'] = 'Опубликовано';
+$lang['admin.entity_list.article.date'] = 'Дата создания';
+$lang['admin.entity_list.article.last_update'] = 'Дата последнего изменения';
+$lang['admin.entity_list.article.priority'] = 'Приоритет';
+
+$lang['admin.add_edit.article.form_title'] = ' Добавить/изменить статью';
+$lang['admin.add.article.form_title'] = 'Добавить статью';
+$lang['admin.add_edit.article.id'] = 'id';
+$lang['admin.add_edit.article.name'] = 'Название';
+$lang['admin.add_edit.article.name.description'] = '';
+$lang['admin.add_edit.article.page_url'] = 'URL-адрес страницы';
+$lang['admin.add_edit.article.page_url.description'] = '';
+$lang['admin.add_edit.article.content'] = 'Текст';
+$lang['admin.add_edit.article.content.description'] = 'Тег для вставки промо блока: {BROADCAST_PROMO_BLOCK}';
+$lang['admin.add_edit.article.priority'] = 'Приоритет';
+$lang['admin.add_edit.article.priority.description'] = '';
+$lang['admin.add_edit.article.date'] = 'Дата создания';
+$lang['admin.add_edit.article.date.description'] = '';
+$lang['admin.add_edit.article.last_update'] = 'Дата последнего изменения';
+$lang['admin.add_edit.article.last_update.description'] = '';
+$lang['admin.add_edit.article.published'] = 'Опубликовано';
+$lang['admin.add_edit.article.published.description'] = '';
+$lang['admin.add_edit.article.hide_contents'] = 'Скрыть содержание';
+$lang['admin.add_edit.article.hide_contents.description'] = '';
+$lang['admin.add_edit.article.category'] = 'Категория';
+$lang['admin.add_edit.article.category.description'] = '';
+$lang['admin.add_edit.article.category.default'] = '--Пожалуйста выберите--';
+$lang['admin.add_edit.article.author'] = 'Автор';
+$lang['admin.add_edit.article.author.description'] = '';
+$lang['admin.add_edit.article.author.default'] = '--Пожалуйста выберите--';
+$lang['admin.add_edit.article.image'] = 'Изображение';
+$lang['admin.add_edit.article.image.description'] = '';
+$lang['admin.add_edit.article.head_section_code'] = 'Код в разделе "head"';
+$lang['admin.add_edit.article.head_section_code.description'] = '';
+$lang['admin.add_edit.article.header.title'] = 'Header.title';
+$lang['admin.add_edit.article.header.title.description'] = '';
+$lang['admin.add_edit.article.header.description'] = 'Header.description';
+$lang['admin.add_edit.article.header.description.description'] = '';
+
+$lang['admin.messages.article.add'] = 'Статья успешно добавлена.';
+$lang['admin.messages.article.edit'] = 'Статья успешно изменена.';
+$lang['admin.messages.article.delete'] = 'Статья успешно удалена.';
+//------------------------ ARTICLE > END -------------------------------------;

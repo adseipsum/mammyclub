@@ -1,0 +1,51 @@
+<?php if (!defined("BASEPATH")) exit("No direct script access allowed");
+
+//------------------------ CAMPAIGN > START -----------------------------------;
+$lang['admin.menu.campaign.name'] = 'Рекламные Кампании';
+$lang['admin.entity_list.campaign.list_title'] = 'Рекламные Кампании';
+$lang['admin.entity_list.campaign.filter.published_title'] = 'Опубликовано';
+
+$lang['admin.entity_list.campaign.name'] = 'Название';
+$lang['admin.entity_list.campaign.priority'] = 'Приоритет';
+$lang['admin.entity_list.campaign.end_date'] = 'Дата Окончания';
+$lang['admin.entity_list.campaign.published'] = 'Опубликовано';
+$lang['admin.entity_list.campaign.banned_countries'] = 'Не показывать для стран';
+
+$lang['admin.add_edit.campaign.form_title'] = ' Добавить/изменить Рекламную Кампанию';
+$lang['admin.add.campaign.form_title'] = 'Добавить Рекламную Кампанию';
+$lang['admin.add_edit.campaign.id'] = 'id';
+$lang['admin.add_edit.campaign.name'] = 'Название';
+$lang['admin.add_edit.campaign.name.description'] = '';
+$lang['admin.add_edit.campaign.priority'] = 'Приоритет';
+$lang['admin.add_edit.campaign.priority.description'] = '';
+$lang['admin.add_edit.campaign.end_date'] = 'Дата Окончания';
+$lang['admin.add_edit.campaign.end_date.description'] = '';
+$lang['admin.add_edit.campaign.published'] = 'Опубликовано';
+$lang['admin.add_edit.campaign.published.description'] = '';
+$lang['admin.add_edit.campaign.banned_countries'] = 'Не показывать для стран';
+$lang['admin.add_edit.campaign.banned_countries.description'] = 'Вводить нужно коды стран через запятую. Например: "UA, RU"';
+$lang['admin.add_edit.campaign.allowed_sections'] = 'Разделы на которых будут отображаться баннеры';
+$lang['admin.add_edit.campaign.allowed_sections.description'] = 'Оставить поле пустым если нужно отображать во всех разделах. Для показа на конкретных разделах укажите чему должны соответствовать УРЛы (через запятую). Например: statyi, vopros-otvet. Главная страница: "/"';
+$lang['admin.add_edit.campaign.slot_top_banner'] = 'Верхний Баннер {TOP_BANNER}';
+$lang['admin.add_edit.campaign.slot_top_banner.description'] = '';
+$lang['admin.add_edit.campaign.slot_right_banner'] = 'Правый Баннер {RIGHT_BANNER}';
+$lang['admin.add_edit.campaign.slot_right_banner.description'] = '';
+$lang['admin.add_edit.campaign.slot_text_top'] = 'Текст Верх {TEXT_TOP}';
+$lang['admin.add_edit.campaign.slot_text_top.description'] = '';
+$lang['admin.add_edit.campaign.slot_text_bot'] = 'Текст Низ {ТEXT_BOT}';
+$lang['admin.add_edit.campaign.slot_text_bot.description'] = '';
+$lang['admin.add_edit.campaign.slot_text_comments_bot'] = 'Текст Низ Комментов {TEXT_COMMENTS_BOT}';
+$lang['admin.add_edit.campaign.slot_text_comments_bot.description'] = '';
+$lang['admin.add_edit.campaign.slot_tt1'] = 'Текст Тэг 1 {TT1}';
+$lang['admin.add_edit.campaign.slot_tt1.description'] = '';
+$lang['admin.add_edit.campaign.slot_tt2'] = 'Текст Тэг 2 {TT2}';
+$lang['admin.add_edit.campaign.slot_tt2.description'] = '';
+$lang['admin.add_edit.campaign.slot_tt3'] = 'Текст Тэг 3 {TT3}';
+$lang['admin.add_edit.campaign.slot_tt3.description'] = '';
+$lang['admin.add_edit.campaign.slot_head_section'] = '"head" секция';
+$lang['admin.add_edit.campaign.slot_head_section.description'] = '';
+
+$lang['admin.messages.campaign.add'] = 'Кампания успешно добавлена.';
+$lang['admin.messages.campaign.edit'] = 'Кампания успешно отредактирована.';
+$lang['admin.messages.campaign.delete'] = 'Кампания успешно удалена.';
+//------------------------ CAMPAIGN > END -------------------------------------;

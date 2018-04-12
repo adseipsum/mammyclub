@@ -1,0 +1,74 @@
+<?php if (!defined("BASEPATH")) exit("No direct script access allowed");
+
+//---usefultipsbroadcast > ПУСК---;
+$lang['admin.menu.usefultipsbroadcast.name'] = 'Полезные советы';
+$lang['admin.entity_list.usefultipsbroadcast.list_title'] = 'Полезные советы';
+$lang['admin.search.usefultipsbroadcast.description'] = 'по названию';
+$lang['admin.entity_list.usefultipsbroadcast.filter.countries.id_title'] = 'Страна';
+
+$lang['admin.clone_broadcast'] = 'Клонировать';
+
+$lang['admin.entity_list.usefultipsbroadcast.name'] = 'Название';
+$lang['admin.entity_list.usefultipsbroadcast.pregnancy_weeks.number'] = 'Недели береммености';
+$lang['admin.entity_list.usefultipsbroadcast.age_of_child'] = 'Возраст ребенка';
+$lang['admin.entity_list.usefultipsbroadcast.sent_datetime'] = 'Время отправления';
+$lang['admin.entity_list.usefultipsbroadcast.update_frequency'] = 'Частота отправления';
+$lang['admin.entity_list.usefultipsbroadcast.countries.name'] = 'Страна';
+
+$lang['admin.add_edit.usefultipsbroadcast.form_title'] = 'Добавить/изменить Полезные советы';
+$lang['admin.add.usefultipsbroadcast.form_title'] = 'Добавить Полезные советы';
+$lang['admin.add_edit.usefultipsbroadcast.id'] = 'id';
+$lang['admin.add_edit.usefultipsbroadcast.name'] = 'Название';
+$lang['admin.add_edit.usefultipsbroadcast.name.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.subject'] = 'Тема';
+$lang['admin.add_edit.usefultipsbroadcast.subject.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.email_appeal'] = 'Обращение';
+$lang['admin.add_edit.usefultipsbroadcast.email_appeal.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.email_intro'] = 'Вступительная часть письма';
+$lang['admin.add_edit.usefultipsbroadcast.email_intro.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.email_main_text'] = 'Основной текст письма';
+$lang['admin.add_edit.usefultipsbroadcast.email_main_text.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.email_short_text'] = 'Краткий текст письма';
+$lang['admin.add_edit.usefultipsbroadcast.email_short_text.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.email_outro'] = 'Окончание письма';
+$lang['admin.add_edit.usefultipsbroadcast.email_outro.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.age_of_child'] = 'Возраст ребенка';
+$lang['admin.add_edit.usefultipsbroadcast.age_of_child.description'] = 'можно через запятую - например "1,2,11,12,13"';
+$lang['admin.add_edit.usefultipsbroadcast.pregnancy_weeks'] = 'Недели береммености';
+$lang['admin.add_edit.usefultipsbroadcast.pregnancy_weeks.default'] = '-- не выбрано --';
+$lang['admin.add_edit.usefultipsbroadcast.pregnancy_weeks.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.sent_datetime'] = 'Время отправления';
+$lang['admin.add_edit.usefultipsbroadcast.sent_datetime.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.is_sent'] = 'Отпралена';
+$lang['admin.add_edit.usefultipsbroadcast.is_sent.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.update_frequency'] = 'Частота отправления';
+$lang['admin.add_edit.usefultipsbroadcast.update_frequency.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.article'] = 'Статья';
+$lang['admin.add_edit.usefultipsbroadcast.article.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.article.default'] = '--Пожалуйста, выберите--';
+$lang['admin.add_edit.usefultipsbroadcast.countries.to'] = 'Страны';
+$lang['admin.add_edit.usefultipsbroadcast.countries.from'] = 'Страны';
+$lang['admin.add_edit.usefultipsbroadcast.countries.default'] = '--Пожалуйста, выберите--';
+$lang['admin.add_edit.usefultipsbroadcast.countries'] = 'Страны';
+$lang['admin.add_edit.usefultipsbroadcast.countries.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.products'] = 'Товары';
+$lang['admin.add_edit.usefultipsbroadcast.products.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.products.from'] = 'Все Товары';
+$lang['admin.add_edit.usefultipsbroadcast.products.to'] = 'Товары в рассылке';
+$lang['admin.add_edit.usefultipsbroadcast.products.default'] = '--Пожалуйста, выберите--';
+$lang['admin.add_edit.usefultipsbroadcast.products_boys'] = 'Товары (мальчики)';
+$lang['admin.add_edit.usefultipsbroadcast.products_boys.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.products_boys.from'] = 'Все Товары (мальчики)';
+$lang['admin.add_edit.usefultipsbroadcast.products_boys.to'] = 'Товары в рассылке (мальчики)';
+$lang['admin.add_edit.usefultipsbroadcast.products_boys.default'] = '--Пожалуйста, выберите--';
+$lang['admin.add_edit.usefultipsbroadcast.products_girls'] = 'Товары (девочки)';
+$lang['admin.add_edit.usefultipsbroadcast.products_girls.description'] = '';
+$lang['admin.add_edit.usefultipsbroadcast.products_girls.from'] = 'Все Товары (девочки)';
+$lang['admin.add_edit.usefultipsbroadcast.products_girls.to'] = 'Товары в рассылке (девочки)';
+$lang['admin.add_edit.usefultipsbroadcast.products_girls.default'] = '--Пожалуйста, выберите--';
+
+
+$lang['admin.messages.usefultipsbroadcast.add'] = 'Полезные советы успешно добавлена.';
+$lang['admin.messages.usefultipsbroadcast.edit'] = 'Полезные советы успешно изменена.';
+$lang['admin.messages.usefultipsbroadcast.delete'] = 'Полезные советы успешно удалена.';
+//---usefultipsbroadcast > КОНЦА---;

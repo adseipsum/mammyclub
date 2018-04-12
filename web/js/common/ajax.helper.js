@@ -1,0 +1,1 @@
+(function(a){a.parseResponseByType=function(c){if(!c){return null}var b={};if(c.indexOf("{")==0){b.data=jQuery.parseJSON(c);b.type="json"}else{b.data=c;b.type="html"}return b}})(jQuery);

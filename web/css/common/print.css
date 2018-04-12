@@ -1,0 +1,1 @@
+@media print{@page{size:landscape}body *{visibility:hidden}body .header,body .footer{display:none}.buy-box{visibility:visible;position:absolute;top:0;left:0;width:100%;margin-top:100px}body .buy-box *{visibility:visible}body .buy-box .info-box{width:35%}}

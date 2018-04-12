@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "psr-4": {"MoySklad\\": "tooyz/moysklad/src/"}
+  },
+  "config": {
+    "vendor-dir": "../../lib/vendor"
+  },
+  "require": {
+    "retailcrm/api-client-php": "~5.0",
+    "ps/image-optimizer": "~1.1",
+    "querypath/QueryPath": ">=3.0.0",
+    "tooyz/moysklad": "^0.4.2"
+  }
+}
